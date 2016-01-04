@@ -1,0 +1,34 @@
+{
+	"items" : [
+		{
+			"name" : "Andrew",
+			"isHighlighted" : true,
+			"shifted" : false
+		},
+		{
+			"name" : "Fred",
+			"isHighlighted" : false,
+			"shifted" : true
+		},
+		{
+			"name" : "Herb",
+			"isHighlighted" : true,
+			"shifted" : true
+		},
+		{
+			"name" : "Dorothy",
+			"isHighlighted" : true,
+			"shifted" : true
+		},
+		{
+			"name" : "Blanche",
+			"isHighlighted" : true,
+			"shifted" : false
+		},
+		{
+			"name" : "Sophia",
+			"isHighlighted" : false,
+			"shifted" : false
+		}
+	]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+	<title>angular control panel</title>
+	<!-- css libs -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- css custom -->
+	<link rel="stylesheet" type="text/css" href="css/custom/site.css">	
+	<!-- js libs -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.9.0/ui-bootstrap-tpls.min.js"></script>
+	<!-- js custom -->
+	<script src="js/custom/site.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+</head>
+
+<body ng-controller="myCntl">
+	<header class="page-header">
+		<h1>Control panel</h1>
+	</header>
+
+	<div class="items container">
+		<div class="item row" ng-class="{highlighted: item.isHighlighted, shifted: item.shifted}"  ng-repeat="item in items">
+			<div class="col-xs-4">
+				<div class="box">{{ item.name }}</div>
+			</div>
+			<div class="col-xs-3">
+				<button type="button" class="btn btn-primary button-shift" ng-click="item.shifted=!item.shifted">shift</button>
+			</div>
+			<div class="col-xs-3">
+				<button type="button" class="btn btn-success button-highlight" ng-click="item.isHighlighted=!item.isHighlighted">highlight</button>
+			</div>
+		</div>
+	</div>
+<!-- 
+	  <pre><code>{{ items | json }}</code></pre>
+ --> 
+
+</body>
+</html>
